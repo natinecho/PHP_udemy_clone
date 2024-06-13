@@ -16,6 +16,7 @@ import Courses from '../component/Courses';
 import Partner from '../component/Partner';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -183,7 +184,8 @@ function Home() {
               <h1 className='font-bold text-center text-xl sm:text-4xl sm:text-left'>Become instructor</h1> 
               <p className='sm:text-xl'>Instructors from around the world teach millions of learners on Udemy.<br/>
                We provide the tools and skills to teach what you love.</p>
-              <button className='w-4/5 sm:w-1/2 m-2 p-3 bg-[#4a154b] text-white hover:bg-white hover:text-[#4a154b] border border-[#4a154b] font-bold'> Start teaching todayc</button>
+               <Link  to = "/addCourse" className='w-4/5 sm:w-1/2 m-2 p-3 bg-[#4a154b] text-white hover:bg-white hover:text-[#4a154b] border border-[#4a154b] font-bold'> Start teaching today</Link>
+
             </div>
         </div>
       </div>
